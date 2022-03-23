@@ -23,8 +23,8 @@ RUN curl -LJ https://raw.githubusercontent.com/cardiffnlp/tweeteval/main/dataset
 ADD api.py /flask
 ADD templates /flask/templates
 
-# Exposing 8080 because it is the port used for the API
-EXPOSE 8080
+# Exposing 3000 because it is the port used for the API
+EXPOSE 3000
 
 # Run the web service on container startup.
 CMD [ "python", "api.py" ]
