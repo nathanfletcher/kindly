@@ -39,7 +39,7 @@ def api_glossary():
         "detect": "/detect",
         # "train": "/train" #this is yet to be completed
     }
-    return glossary
+    return render_template("index.html")
 
 @app.route('/test-ui', methods=['GET', 'POST'])
 def welcome():
